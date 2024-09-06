@@ -22,6 +22,8 @@ seeder機能を利用. seederはデータベースにデータを追加する機
 1. `app/Models/User.php`ファイルのUserモデルにTweetモデルとの関連を追加する.  
 2. `app/Models/Tweet.php`ファイルのTweetモデルにUserモデルとの関連を追加する.  
 ルーティング  
-`routes/web.php`ファイルにTweetに関するルートを設定する. 
+`routes/web.php`ファイルにTweetに関するルートを設定する.  
+
+#### Bladeテンプレートの作成
 
 <テーブル名の単数形>_<カラム名>  
