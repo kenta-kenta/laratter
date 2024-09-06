@@ -4,8 +4,8 @@
 CRAD操作を実装したSNSを作成.
 
 ### 1限目
-git, githubの学習.
-gitコマンド, add, commit, pushを学習
+git, githubの学習.  
+gitコマンド, add, commit, pushを学習  
 
 ### 2限目
 gitブランチの学習. laravelのログイン機能, テストデータの作成.  
