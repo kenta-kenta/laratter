@@ -1,4 +1,5 @@
 <!-- resources/views/tweets/show.blade.php -->
+ <!-- Tweet詳細の見た目 -->
 
 <x-app-layout>
   <x-slot name="header">

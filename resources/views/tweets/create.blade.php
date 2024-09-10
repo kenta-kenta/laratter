@@ -1,3 +1,5 @@
+<!-- Tweet作成時の画面 -->
+
 <!-- resources/views/tweets/create.blade.php -->
 
 <x-app-layout>
