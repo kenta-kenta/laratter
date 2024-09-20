@@ -13,7 +13,7 @@ class TweetController extends Controller
     public function index()
     {
         // 🔽 liked のデータも合わせて取得するよう修正
-        $tweets = Tweet::with(['user', 'liked'])->latest()->get();
+        $tweets = Tweet::with(['user', 'liked'])->latest()->paginate(10);
         // dd($tweets);
         return view('tweets.index', compact('tweets'));
     }
