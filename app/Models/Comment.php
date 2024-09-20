@@ -7,19 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    use HasFactory;
+  use HasFactory;
 
-    protected $fillable = ['comment', 'tweet_id', 'user_id'];
+  // 🔽 設定できるカラムを追加
+  protected $fillable = ['comment', 'tweet_id', 'user_id'];
 
-    // tweetクラスとの1対多の関係
-    public function tweet()
-    {
-        return $this->belongsTo(Tweet::class);
-    }
+  // 🔽 多対1の関係
+  public function tweet()
+  {
+    return $this->belongsTo(Tweet::class);
+  }
 
-    // userクラスとの1対多の関係
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+  // 🔽 多対1の関係
+  public function user()
+  {
+    return $this->belongsTo(User::class);
+  }
 }
